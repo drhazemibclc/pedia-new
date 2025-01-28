@@ -1,0 +1,48 @@
+
+
+# For better development experience
+[test]
+# Enable coverage reporting
+coverage = true
+
+# Preload configuration
+preload = ["./preload.ts"]
+# Runtime configuration
+jsx = "react"
+jsxFactory = "h"
+jsxFragment = "Fragment"
+jsxImportSource = "react"
+
+# Reduce memory usage if needed
+smol = true
+
+# Set logging level
+logLevel = "debug"
+
+[install]
+# Enable peer dependencies installation
+peer = true
+
+# Enable dev dependencies
+dev = true
+
+# Enable optional dependencies
+optional = true
+
+# Use exact versions for better reproducibility
+exact = true
+
+# Generate human-readable lockfile
+saveTextLockfile = true
+
+# Configure auto-install behavior
+auto = "fallback"
+
+[install.cache]
+# Configure cache location
+disable = false
+disableManifest = false
+
+[test]
+# Configure test coverage
+coverageThreshold = { line = 0.7, function = 0.8, statement = 0.9 }
